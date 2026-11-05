@@ -1,4 +1,0 @@
-azul, cinza , branco e verde
-background-color: rgb(150, 204, 255);
- background-color: rgb(116, 166, 242);
-rgb(229, 245, 254);
