@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+     border-radius: 10px;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.trancicaoImg{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+     transition: transform 0.5s ease;
+     transition: 0.3s;
+}
+.trancicaoImg:hover {
+    transform: scale(1.01) rotate(3deg);
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+}
+.linkCabeçario{
+    transition: 0.3s;
+    transition: 0.3.;
+}
+.linkCabeçario:hover{
+    transform: translateY(-2px); 
+    color: #16476880;
+}
+.titulo{
+    color: rgb(238, 247, 255);
+    font-size: 60px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(173, 215, 255);
+}
+.introducao img {
+    width: 1000px;
+    height: 550px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+h1{
+    text-decoration-line: underline;
+    text-decoration-color: rgb(173, 215, 255);
+    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    flex: 1;
+    height: 72px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: -20px;
+    margin-right: 15px;
+}
+
+.menu a {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 28px;
+    flex-shrink: 0;
+}
+
+.btn-login {
+    background: white;
+    color: #087bd1;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 16px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #13659cd5;
+    color: #fbfbfb;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f9f9f9;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.topo {
+    width: 100%;
+    height: 72px;
+    background: #087bd1;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    width: 270px;
+    min-width: 270px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+    gap: 10px;
+}
+
+.logo-hb {
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: -7px;
+}
+
+.logo-nome {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: .9;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex: 1;
+    height: 72px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.pesquisa {
+    width: 78px;
+    min-width: 78px;
+    height: 72px;
+    background: #1597ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 43px;
+}
+
+.pagina {
+    display: flex;
+    align-items: flex-start;
+}
+
+.lateral {
+    width: 360px;
+    min-width: 360px;
+    height: calc(100vh - 72px);
+    position: sticky;
+    top: 72px;
+    background: #ffffff;
+    color: #07529b;
+    padding: 43px 22px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.cadastro {
+    width: 100%;
+}
+
+.icone-cadastro {
+    color: #000000;
+    font-size: 43px;
+    height: 46px;
+}
+
+.cadastro h1 {
+    font-size: 21px;
+}
+
+.cadastro h2 {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.cadastro > p {
+    color: #286493;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 10px 0 14px;
+}
+
+.campo {
+    width: 100%;
+    height: 39px;
+    background: white;
+    border: 1px solid #91bee0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 9px;
+ transition: 0.3s;
+}
+
+.campo:hover{
+    transform: translateY(-2px);
+    background-color: #76c1ff;
+    counter-reset: white;
+}
+
+
+.campo > div {
+    width: 27px;
+    color: #176bb0;
+}
+
+.campo input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #07529b;
+    font-size: 13px;
+  
+}
+
+
+
+.campo b {
+    font-size: 12px;
+    color: #176bb0;
+}
+
+form button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+    background: #1595ec;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+form button:hover{
+    transform: translateY(-2px);
+    background: #0f629a7c;
+    color: white;
+}
+form button:active{
+    transform: scale(0.95);
+}
+
+.ou {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 0;
+    color: #087bd1;
+    font-size: 12px;
+}
+
+.ou > div {
+    height: 1px;
+    background: #a7c7df;
+    flex: 1;
+}
+
+.google {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #168fe8;
+    border-radius: 6px;
+    background: white;
+    color: #0875c9;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition:0.2s;
+}
+.google :hover{
+    background: #9a0f0f7c;
+    color: white;
+}
+
+.login {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 14px;
+}
+
+.login a {
+    color: #006dcc;
+    font-weight: bold;
+}
+
+.informacoes {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+.informacoes > div:first-child {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    margin-top: 5px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.conteudo {
+    flex: 1;
+    min-width: 0;
+    background: #69b9ff;
+    padding: 0 42px 70px;
+}
+
+.introducao {
+    padding: 48px 5px 40px;
+}
+
+.introducao h1 {
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+.introducao p {
+    max-width: 800px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px 24px;
+}
+
+.materia {
+    width: 100%;
+}
+
+.materia img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+}
+
+.materia h2 {
+    font-size: 23px;
+    margin: 14px 5px 7px;
+}
+
+.materia p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 5px;
+}
+
+.faixa {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-top: 25px;
+    padding: 38px 5px;
+}
+
+.faixa h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.faixa p {
+    max-width: 850px;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.secao {
+    margin-top: 50px;
+    border-top: 2px solid white;
+    padding-top: 27px;
+}
+
+.secao > h2 {
+    font-size: 27px;
+    margin-bottom: 28px;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 30px;
+}
+
+.lista div {
+    border-top: 1px solid #ffffff;
+    padding: 18px 5px 25px;
+}
+
+.lista h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.lista p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.experiencias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.experiencias > div {
+    border-top: 2px solid #f8f6f6;
+    padding: 18px 5px 30px;
+}
+
+.experiencias > div > div {
+    color: #f4f1f1;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.experiencias h3 {
+    font-size: 22px;
+    margin: 8px 0;
+}
+
+.experiencias p {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 17px;
+}
+
+.experiencias a {
+    color: #fffcfc;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.noticias {
+    margin-top: 50px;
+    border-top: 2px solid white;
+    padding-top: 27px;
+}
+
+.noticias > h2 {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.noticias-grade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+}
+
+.noticia {
+    border-top: 1px solid #dfece2;
+    padding: 20px 5px 28px;
+}
+
+.noticia > div:first-child {
+    color: #faf9f9;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.noticia h3 {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.noticia p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.noticia a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #f7f6f6;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.recursos {
+    margin-top: 45px;
+    border-top: 2px solid white;
+    padding-top: 28px;
+}
+
+.recursos h2 {
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.recursos-grade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+}
+
+.recursos-grade a {
+    border-top: 1px solid #e9f0ea;
+    padding: 18px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.recursos-grade a > div:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.recursos-grade a > div:last-child {
+    font-size: 13px;
+    color: #d5e5d7;
+}
+
+.recursos-grade a:hover > div:first-child {
+    color: #ff5a49;
+}
+
+.faixa-final {
+    margin-top: 50px;
+    padding: 38px 25px;
+    border: 1px solid #fdfbfb;
+}
+
+.faixa-final h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.faixa-final p {
+    max-width: 800px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+.faixa-final a {
+    display: inline-block;
+    border: 1px solid #ff5a49;
+    padding: 13px 17px;
+    color: #ff5a49;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.final {
+    margin-top: 50px;
+    padding-top: 35px;
+    border-top: 2px solid white;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.final-logo {
+    font-size: 30px;
+    line-height: .9;
+    display: flex;
+    flex-direction: column;
+}
+
+.final > div:not(.final-logo) {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.final h3 {
+    font-size: 11px;
+    margin-bottom: 7px;
+}
+
+.final a {
+    font-size: 13px;
+    color: #d5e5d7;
+}
+
+.final a:hover {
+    color: #ff5a49;
+}
+
+
+

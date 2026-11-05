@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(116, 166, 242);
+  color: #1c2b29;
+}
+ 
+/* TOPO */
+#topo {
+  background-color: #21287a;
+  color: white;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+ 
+#topo a {
+  color: #74a6f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+ 
+#topo a:hover {
+  color: white;
+}
+ 
+/* SAUDAÇÃO */
+#saudacao {
+  text-align: center;
+  padding: 30px 20px 10px;
+  color: white;
+}
+ 
+#saudacao h1 {
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+ 
+#saudacao p {
+  font-size: 16px;
+}
+ 
+/* CARDS */
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 24px;
+  justify-content: center;
+}
+ 
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  width: 260px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+ 
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+ 
+.card-icone {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+ 
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+ 
+.card p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+ 
+/* Cores da borda lateral de cada card */
+.azul {
+  border-left: 6px solid #21287a;
+}
+ 
+.verde {
+  border-left: 6px solid #2e9b6b;
+}
+ 
+.amarelo {
+  border-left: 6px solid #c8a800;
+}
+ 
+.laranja {
+  border-left: 6px solid #e07830;
+}
+ 
